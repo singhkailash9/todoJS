@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo WebApp</title>
+</head>
+
+<body>
+    <header>
+        <h1>ToDo List WebApp</h1>
+    </header>
+
+    <div id="UI">
+        <div class="box">
+            <div>
+                <input id="title" class="mp" type="text" placeholder="Add Title">
+            </div>
+            <div>
+                <textarea id="description" class="mp" type="text" placeholder="Add Description"></textarea>
+            </div>
+            <div>
+                <button class="btn mp" onclick="addTask()">Save Task</button>
+            </div>
+        </div>
+
+        <div>
+            <table id="todolist">
+                <tr>
+                    <th style="width: 10vw;">Title</th>
+                    <th style="width: 30vw;">Short Description</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

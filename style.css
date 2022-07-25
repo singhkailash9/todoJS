@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: rgba(222, 44, 44, 0.811);
+    text-decoration: underline;
+    color: white;
+}
+body{
+    background-color: rgba(190, 220, 220, 0.535);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* utils class */
+.mp{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+/* UI  */
+#UI{
+    display: flex;
+}
+/* box  */
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin: 15vh;
+    padding: 1rem 1rem;
+    border: 2px solid blue;
+    max-height: 50vh;
+    background-color: rgba(137, 196, 219, 0.5);
+}
+.box textarea{
+    max-height: 25vh;
+    max-width: 16vw;
+}
+.btn{
+    background-color: blue;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-left: 5vw;
+}
+/* table  */
+table{
+    margin-top: 7vh;
+    border: 2px solid blue;
+    background-color: rgba(137, 196, 219, 0.5);
+}
+th, td {
+    text-align: left;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    font-size: 1.1rem;
+}
+th{
+    background-color: rgba(160, 83, 255, 0.663);
+    color: white;
+}
+td{
+    background-color: rgb(199, 229, 255);
+}
+.listbtn{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 9px;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    border: none;
+}
+.incomplete{
+    opacity: 50%;
+    text-decoration: line-through;
+}
+@media screen and (max-width: 550px) {
+    #UI{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 80vw;
+        margin: 0;
+        margin-left: 10vw;
+    }
+    .box textarea{
+        max-width: 70vw;
+        max-height: 22vh;
+    }
+    table{
+        margin-left: 3vw;
+        text-align: center;
+    }
+}
+@media screen and (min-width:550px) and (max-width:1100px) {
+    .box{
+        margin: 1rem;
+        width: 35vw;
+    }
+    .box textarea{
+        max-width: 28vw;
+        max-height: 18vh;
+    }
+    .box input{
+        margin: 0.3;
+        padding: 0.3;
+        width: 22vw;
+    }
+}
